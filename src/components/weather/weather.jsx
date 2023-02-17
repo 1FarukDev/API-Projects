@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./weather.css";
 function Weather() {
   const [city, setCity] = useState("");
@@ -28,16 +28,26 @@ function Weather() {
       {/* <h1>{weather.map(()=>{
             return
         })}</h1> */}
-      {/* <h1>{data.name} name</h1> */}
-      <h1>Name</h1>
-      <div className="details">
-        <h1 className="id">Temp</h1>
-        <h1 className="id">Id</h1>
-        <h1 className="id">Id</h1>
-        <h1 className="id">Id</h1>
+      <h1></h1>
+      <div className="temp">
+      <h1>{data.name}</h1>
+      <h1 className="temperature">{data.main.temp}°C</h1>
       </div>
-      {/* <h1>{data.main.temp} temp</h1> */}
-      {/* <h1>{data.weather[0].id} id</h1> */}
+      <div className="weather">
+        <h1>Weather description: {data.weather[0].description}</h1>
+      </div>
+      <div className="details">
+        <h1 className="id">
+            <div className="name">Longitude</div>
+            {data.coord.lon}
+            </h1>
+        <h1 className="id">
+            <div className="name">Latitude</div>
+            {data.coord.lat}
+            </h1>
+        {/* <h1 className="id">Id</h1> */}
+      </div>
+      {/* <h1>{data.weather[0].id}</h1> */}
     </main>
   );
 }

@@ -29,7 +29,7 @@ input{
 form{
     /* border: 1px solid black; */
     width: 80%;
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
 }
 button{
     width: 20%;
@@ -37,4 +37,14 @@ button{
     border-radius: 4px;
     background-color: #679289;
     border: none;
+}
+.details{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    /* margin: 1rem; */
+}
+.id{
+    margin: 1rem;
+    margin-bottom: 5rem;
 }

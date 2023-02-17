@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+Main{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input{
+    border: none;
+    border-radius: 20px 0px 0px 20px;
+    height: 5vh;
+    width: 80%;
+    padding-left: .5rem;
+}
+::placeholder{
+    padding-left: .5rem;
+    color: black;
+}
+form{
+    /* border: 1px solid black; */
+    width: 80%;
+    margin-bottom: 7rem;
+}
+button{
+    width: 20%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #679289;
+    border: none;
+}
